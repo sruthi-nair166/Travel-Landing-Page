@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trailblaze Travels</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -125,6 +129,41 @@
           <p>Book</p>
         </article>
         <button>View More</button>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Need help planning your trip?</p>
+        <p>
+          Reach out to us and we’ll guide you on your next journey. Just fill
+          out the form and our team will reach out.
+        </p>
+        <button><i class="fa-solid fa-phone"></i>+91-755-540-9528</button>
+        <button>
+          <i class="fa-solid fa-envelope"></i>info@trailblaze.co.id
+        </button>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </section>
     </main>
   </body>
