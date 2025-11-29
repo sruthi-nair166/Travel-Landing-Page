@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trailblaze Travels</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
   </head>
 
@@ -27,7 +31,7 @@
     </header>
 
     <main>
-      <section id="hero">
+      <section id="hero" class="white">
         <h1>Discover Your Next Destination</h1>
         <p>Discover Iconic Places and Hidden Gems of India</p>
 
@@ -42,7 +46,9 @@
           <section>
             <h2>About Us</h2>
             <div class="split">
-              <p>Discover places that make every journey feel unforgettable.</p>
+              <p class="subtitle">
+                Discover places that make every journey feel unforgettable.
+              </p>
               <p>
                 Travel is about the moments you remember. That’s why we
                 highlight destinations across the country that offer unique
@@ -54,11 +60,15 @@
 
           <section>
             <h2>Features</h2>
-            <p>Everything you need to explore the country, all in one place.</p>
+            <p class="subtitle">
+              Everything you need to explore the country, all in one place.
+            </p>
 
             <div class="features-cards-wrapper">
               <article class="features-card">
-                <i class="fa-regular fa-map"></i>
+                <div class="icon">
+                  <i class="fa-regular fa-map"></i>
+                </div>
                 <h3>Curated Destinations</h3>
                 <p>
                   Discover handpicked locations from popular cities to
@@ -67,7 +77,9 @@
                 </p>
               </article>
               <article class="features-card">
-                <i class="fa-solid fa-circle-info"></i>
+                <div class="icon">
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>
                 <h3>Clean & Simple Information</h3>
                 <p>
                   Find everything you need at a glance—best time to visit, what
@@ -75,7 +87,9 @@
                 </p>
               </article>
               <article class="features-card">
-                <i class="fa-regular fa-compass"></i>
+                <div class="icon">
+                  <i class="fa-regular fa-compass"></i>
+                </div>
                 <h3>Travel Inspiration</h3>
                 <p>
                   Browse destinations by interest—nature, heritage, adventure,
@@ -83,7 +97,9 @@
                 </p>
               </article>
               <article class="features-card">
-                <i class="fa-regular fa-star"></i>
+                <div class="icon">
+                  <i class="fa-regular fa-star"></i>
+                </div>
                 <h3>Updated Travel Highlights</h3>
                 <p>
                   Stay inspired with trending destinations, seasonal picks, and
@@ -93,10 +109,10 @@
             </div>
           </section>
 
-          <section>
+          <section class="explore">
             <h2>Explore by Interests</h2>
             <div class="split">
-              <p>Find the experiences that match your mood.</p>
+              <p class="subtitle">Find the experiences that match your mood.</p>
               <p>
                 Whether you’re drawn to peaceful natural landscapes, rich
                 cultural heritage, or thrilling adventures, our curated
@@ -107,7 +123,7 @@
 
             <div class="category-wrapper">
               <div class="img-container">
-                <span>Nature</span>
+                <button>Nature</button>
                 <img
                   class="border-radius"
                   src="/images/nature_category.png"
@@ -115,7 +131,7 @@
                 />
               </div>
               <div class="img-container">
-                <span>Heritage</span>
+                <button>Heritage</button>
                 <img
                   class="border-radius"
                   src="/images/heritage_category.png"
@@ -123,7 +139,7 @@
                 />
               </div>
               <div class="img-container">
-                <span>Adventure</span>
+                <button>Adventure</button>
                 <img
                   class="border-radius"
                   src="/images/adventure_category.png"
@@ -131,7 +147,7 @@
                 />
               </div>
               <div class="img-container">
-                <span>Relaxation</span>
+                <button>Relaxation</button>
                 <img
                   class="border-radius"
                   src="/images/relaxation_category.png"
@@ -147,7 +163,9 @@
 
         <section id="destinations">
           <h2>Explore Popular Destinations</h2>
-          <p>Handpicked packages for your next unforgettable journey.</p>
+          <p class="subtitle">
+            Handpicked packages for your next unforgettable journey.
+          </p>
 
           <div class="destination-cards-wrapper">
             <article>
@@ -260,7 +278,7 @@
         <div class="contact-wrapper">
           <div>
             <h2>Contact Us</h2>
-            <p>Need help planning your trip?</p>
+            <p class="subtitle">Need help planning your trip?</p>
             <p>
               Reach out to us and we’ll guide you on your next journey. Just
               fill out the form and our team will reach out.
