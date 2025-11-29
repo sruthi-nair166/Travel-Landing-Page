@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trailblaze Travels</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -36,197 +37,225 @@
         </div>
       </section>
 
-      <section id="about">
-        <section>
-          <h2>About Us</h2>
-          <p>Discover places that make every journey feel unforgettable.</p>
-          <p>
-            Travel is about the moments you remember. That’s why we highlight
-            destinations across the country that offer unique
-            experiences—peaceful nature spots, cultural hubs, vibrant cities,
-            and everything in between.
-          </p>
+      <div class="margin">
+        <section id="about">
+          <section>
+            <h2>About Us</h2>
+            <div class="split">
+              <p>Discover places that make every journey feel unforgettable.</p>
+              <p>
+                Travel is about the moments you remember. That’s why we
+                highlight destinations across the country that offer unique
+                experiences—peaceful nature spots, cultural hubs, vibrant
+                cities, and everything in between.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Features</h2>
+            <p>Everything you need to explore the country, all in one place.</p>
+
+            <div class="features-cards-wrapper">
+              <article class="features-card">
+                <i class="fa-regular fa-map"></i>
+                <h3>Curated Destinations</h3>
+                <p>
+                  Discover handpicked locations from popular cities to
+                  lesser-known escapes, each chosen for its beauty, culture, or
+                  unique experience.
+                </p>
+              </article>
+              <article class="features-card">
+                <i class="fa-solid fa-circle-info"></i>
+                <h3>Clean & Simple Information</h3>
+                <p>
+                  Find everything you need at a glance—best time to visit, what
+                  to see, local tips, and more.
+                </p>
+              </article>
+              <article class="features-card">
+                <i class="fa-regular fa-compass"></i>
+                <h3>Travel Inspiration</h3>
+                <p>
+                  Browse destinations by interest—nature, heritage, adventure,
+                  food, relaxation—so you can plan based on your mood.
+                </p>
+              </article>
+              <article class="features-card">
+                <i class="fa-regular fa-star"></i>
+                <h3>Updated Travel Highlights</h3>
+                <p>
+                  Stay inspired with trending destinations, seasonal picks, and
+                  must-visit locations.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <h2>Explore by Interests</h2>
+            <div class="split">
+              <p>Find the experiences that match your mood.</p>
+              <p>
+                Whether you’re drawn to peaceful natural landscapes, rich
+                cultural heritage, or thrilling adventures, our curated
+                selections help you discover destinations that inspire and
+                delight.
+              </p>
+            </div>
+
+            <div class="category-wrapper">
+              <img src="" alt="nature category" />
+              <img src="" alt="heritage category" />
+              <img src="" alt="adventure category" />
+              <img src="" alt="relaxation category" />
+            </div>
+          </section>
+          <button>View More</button>
         </section>
 
-        <section>
-          <h2>Features</h2>
-          <p>Everything you need to explore the country, all in one place.</p>
+        <section id="destinations">
+          <h2>Explore Popular Destinations</h2>
+          <p>Handpicked packages for your next unforgettable journey.</p>
 
-          <article>
-            <h3>Curated Destinations</h3>
-            <p>
-              Discover handpicked locations from popular cities to lesser-known
-              escapes, each chosen for its beauty, culture, or unique
-              experience.
-            </p>
-          </article>
-          <article>
-            <h3>Clean & Simple Information</h3>
-            <p>
-              Find everything you need at a glance—best time to visit, what to
-              see, local tips, and more.
-            </p>
-          </article>
-          <article>
-            <h3>Travel Inspiration</h3>
-            <p>
-              Browse destinations by interest—nature, heritage, adventure, food,
-              relaxation—so you can plan based on your mood.
-            </p>
-          </article>
-          <article>
-            <h3>Updated Travel Highlights</h3>
-            <p>
-              Stay inspired with trending destinations, seasonal picks, and
-              must-visit locations.
-            </p>
-          </article>
+          <div class="destination-cards-wrapper">
+            <article>
+              <img src="" alt="img-1" />
+              <h3>Tour Package Name</h3>
+              <p>Rs. xxxx</p>
+              <p>Book</p>
+            </article>
+            <article>
+              <img src="" alt="img-2" />
+              <h3>Tour Package Name</h3>
+              <p>Rs. xxxx</p>
+              <p>Book</p>
+            </article>
+            <article>
+              <img src="" alt="img-3" />
+              <h3>Tour Package Name</h3>
+              <p>Rs. xxxx</p>
+              <p>Book</p>
+            </article>
+            <article>
+              <img src="" alt="img-4" />
+              <h3>Tour Package Name</h3>
+              <p>Rs. xxxx</p>
+              <p>Book</p>
+            </article>
+          </div>
+          <button>View More</button>
         </section>
 
-        <section>
-          <h2>Explore by Interests</h2>
-          <p>Find the experiences that match your mood.</p>
-          <p>
-            Whether you’re drawn to peaceful natural landscapes, rich cultural
-            heritage, or thrilling adventures, our curated selections help you
-            discover destinations that inspire and delight.
-          </p>
+        <section id="contact">
+          <div>
+            <h2>Contact Us</h2>
+            <p>Need help planning your trip?</p>
+            <p>
+              Reach out to us and we’ll guide you on your next journey. Just
+              fill out the form and our team will reach out.
+            </p>
+            <button><i class="fa-solid fa-phone"></i>+91-755-540-9528</button>
+            <button>
+              <i class="fa-solid fa-envelope"></i>info@trailblaze.co.id
+            </button>
+          </div>
 
-          <img src="" alt="nature category" />
-          <img src="" alt="heritage category" />
-          <img src="" alt="adventure category" />
-          <img src="" alt="relaxation category" />
+          <form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
         </section>
-        <button>View More</button>
-      </section>
-
-      <section id="destinations">
-        <h2>Explore Popular Destinations</h2>
-        <p>Handpicked packages for your next unforgettable journey.</p>
-
-        <article>
-          <img src="" alt="" />
-          <h3>Tour Package Name</h3>
-          <p>Rs. xxxx</p>
-          <p>Book</p>
-        </article>
-        <article>
-          <img src="" alt="" />
-          <h3>Tour Package Name</h3>
-          <p>Rs. xxxx</p>
-          <p>Book</p>
-        </article>
-        <article>
-          <img src="" alt="" />
-          <h3>Tour Package Name</h3>
-          <p>Rs. xxxx</p>
-          <p>Book</p>
-        </article>
-        <article>
-          <img src="" alt="" />
-          <h3>Tour Package Name</h3>
-          <p>Rs. xxxx</p>
-          <p>Book</p>
-        </article>
-        <button>View More</button>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Need help planning your trip?</p>
-        <p>
-          Reach out to us and we’ll guide you on your next journey. Just fill
-          out the form and our team will reach out.
-        </p>
-        <button><i class="fa-solid fa-phone"></i>+91-755-540-9528</button>
-        <button>
-          <i class="fa-solid fa-envelope"></i>info@trailblaze.co.id
-        </button>
-
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            placeholder="Enter your message"
-            required
-          ></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
+      </div>
     </main>
 
     <footer>
-      <section>
-        <h3>About</h3>
-        <ul>
-          <li><a href="#about">About us</a></li>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/">Careers</a></li>
-          <li><a href="/">Jobs</a></li>
-          <li><a href="/">Gallery</a></li>
-        </ul>
-      </section>
+      <div class="footer-nav">
+        <section>
+          <h3>About</h3>
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Jobs</a></li>
+            <li><a href="/">Gallery</a></li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Support</h3>
-        <ul>
-          <li><a href="#contact">Contact us</a></li>
-          <li><a href="/">Online Chat</a></li>
-          <li><a href="/">Whatsapp</a></li>
-          <li><a href="/">Ticketing</a></li>
-          <li><a href="/">Call Center</a></li>
-        </ul>
-      </section>
+        <section>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="/">Online Chat</a></li>
+            <li><a href="/">Whatsapp</a></li>
+            <li><a href="/">Ticketing</a></li>
+            <li><a href="/">Call Center</a></li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>FAQ</h3>
-        <ul>
-          <li><a href="/">Account</a></li>
-          <li><a href="/">Booking</a></li>
-          <li><a href="/">Payments</a></li>
-          <li><a href="/">Returns</a></li>
-          <li><a href="/">Privacy Policy</a></li>
-        </ul>
-      </section>
+        <section>
+          <h3>FAQ</h3>
+          <ul>
+            <li><a href="/">Account</a></li>
+            <li><a href="/">Booking</a></li>
+            <li><a href="/">Payments</a></li>
+            <li><a href="/">Returns</a></li>
+            <li><a href="/">Privacy Policy</a></li>
+          </ul>
+        </section>
+      </div>
 
-      <section>
-        <h3>Newsletter</h3>
-        <p>
-          Stay updated with our latest travel tips and destination highlights.
-        </p>
+      <div>
+        <section>
+          <h3>Newsletter</h3>
+          <p>
+            Stay updated with our latest travel tips and destination highlights.
+          </p>
 
-        <form>
-          <label for="newsletter" class="sr-only">Enter your email</label>
-          <input
-            type="email"
-            id="newsletter"
-            placeholder="Enter your email"
-            required
-          />
+          <form>
+            <label for="newsletter" class="sr-only">Enter your email</label>
+            <input
+              type="email"
+              id="newsletter"
+              placeholder="Enter your email"
+              required
+            />
 
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
 
-      <section>
-        <ul>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-square-facebook"></i></li>
-          <li><i class="fa-brands fa-youtube"></i></li>
-        </ul>
-      </section>
+        <section>
+          <ul class="social-media-icons">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-square-facebook"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
