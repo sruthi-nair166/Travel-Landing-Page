@@ -20,6 +20,10 @@ li {
   margin: 0 auto;
 }
 
+.border-radius {
+  border-radius: 1rem;
+}
+
 #about,
 #destinations,
 #contact {
@@ -49,6 +53,10 @@ header ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(/images/hero_bg.jpg) no-repeat;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 .hero-btns-wrapper {
@@ -81,6 +89,30 @@ header ul {
 .category-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.img-container {
+  height: 400px;
+  position: relative;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.view-more-btn-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 /* destinations section */
@@ -88,19 +120,56 @@ header ul {
 .destination-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.days {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.rating {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.location {
+  position: absolute;
+  left: 20px;
+  bottom: 80px;
+}
+
+.description {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* contact section */
 
-#contact {
+.contact-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  background: url(/images/Screenshot\ 2025-11-29\ 163825.png) no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  height: 700px;
 }
 
-#contact form {
+.contact-wrapper form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
 /* footer */
