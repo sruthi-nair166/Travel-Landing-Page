@@ -12,6 +12,8 @@ body {
 
 a {
   text-decoration: none;
+  color: #b6ae9f;
+  font-weight: 400;
 }
 
 li {
@@ -26,7 +28,8 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-p {
+p,
+span {
   color: #b6ae9f;
   font-weight: 400;
 }
@@ -45,10 +48,10 @@ p {
   border-radius: 1rem;
 }
 
+#hero,
 #about,
-#destinations,
-#contact {
-  padding-top: 5rem;
+#destinations {
+  margin-bottom: 3rem;
 }
 
 /* header section */
@@ -77,8 +80,6 @@ header ul {
   align-items: center;
   background: url(/images/hero_bg.jpg) no-repeat;
   background-size: cover;
-  margin: 0.5rem;
-  border-radius: 0.3rem;
   position: relative;
 }
 
@@ -113,6 +114,10 @@ header ul {
 }
 
 /* about section */
+
+#about {
+  padding-top: 2rem;
+}
 
 .subtitle {
   font-size: 2rem;
@@ -176,26 +181,26 @@ h3 {
   gap: 2rem;
 }
 
-.img-container {
+.category-img-container {
   height: 500px;
   position: relative;
 }
 
-.img-container::after {
+.category-img-container::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
 }
 
-.img-container img {
+.category-img-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.img-container button {
+.category-img-container button {
   color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -216,28 +221,58 @@ h3 {
 
 /* destinations section */
 
+#destinations {
+  padding-top: 2rem;
+}
+
 .destination-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
+.destination-img-container {
+  height: 500px;
+  position: relative;
+}
+
+.destination-img-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  border-radius: 1rem;
+}
+
+.destination-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .days {
   position: absolute;
   left: 20px;
   top: 15px;
+  color: white;
 }
 
 .rating {
   position: absolute;
   right: 20px;
   top: 15px;
+  color: white;
 }
 
 .location {
   position: absolute;
-  left: 20px;
-  bottom: 80px;
+  left: 15px;
+  bottom: 70px;
+  color: white;
+  z-index: 1;
 }
 
 .description {
@@ -245,11 +280,25 @@ h3 {
   left: 15px;
   bottom: 15px;
   right: 15px;
+  color: rgba(255, 255, 255, 0.767);
+  line-height: 1rem;
+  z-index: 1;
+  font-size: 14px;
 }
 
 .booking {
   display: flex;
   justify-content: space-between;
+}
+
+.package-name {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.price {
+  font-weight: 400;
+  color: #582a14;
 }
 
 /* contact section */
@@ -261,7 +310,26 @@ h3 {
   background: url(/images/contact_bg.png) no-repeat;
   background-size: cover;
   padding: 3rem;
-  height: 700px;
+  height: 600px;
+  position: relative;
+}
+
+.contact-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-wrapper .subtitle {
+  margin-bottom: 1rem;
+}
+
+.contact-wrapper .para {
+  color: #2f2e2b;
+  margin-bottom: 1rem;
+  z-index: 1;
+  font-weight: 500;
 }
 
 .contact-wrapper form {
@@ -269,6 +337,34 @@ h3 {
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
+  background-color: white;
+}
+
+.contact-wrapper form label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-wrapper form input {
+  margin-bottom: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  border: 1px solid black;
+}
+
+.contact-wrapper form textarea {
+  margin-bottom: 1.2rem;
+  border-radius: 1rem;
+}
+
+.contact-wrapper form textarea::placeholder {
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-wrapper form button {
+  padding: 0.8rem;
+  border-radius: 5rem;
+  border: none;
 }
 
 /* footer */
@@ -276,16 +372,63 @@ h3 {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
 }
 
 .footer-nav {
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
+}
+
+.footer-nav li {
+  margin-bottom: 1rem;
+}
+
+.newsletter-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.newsletter-wrapper form {
+  position: relative;
+  border: 1px solid #582a14;
+  border-radius: 5rem;
+  padding: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-wrapper input {
+  padding: 0.5rem;
+  border-radius: 5rem;
+  border: none;
+}
+
+.newsletter-wrapper button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  border: 1px solid #582a14;
+  position: absolute;
+  right: 0.15rem;
+  top: 0.15rem;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright-wrapper p {
+  color: #582a14;
 }
 
 .social-media-icons {
   display: flex;
   justify-content: end;
-  gap: 0.5rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #582a14;
 }
