@@ -8,12 +8,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 254, 250);
 }
 
 a {
   text-decoration: none;
-  color: #b6ae9f;
-  font-weight: 400;
 }
 
 li {
@@ -32,6 +31,25 @@ p,
 span {
   color: #b6ae9f;
   font-weight: 400;
+}
+
+button {
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-family: "roboto";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dark-bg-btn {
+  background-color: #4e3326;
+  color: white;
+}
+
+.dark-bg-btn:hover {
+  background-color: #4e332699;
+  transition: 0.4s;
 }
 
 .margin {
@@ -65,9 +83,39 @@ header {
   z-index: 1;
 }
 
+.logo {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 header ul {
   display: flex;
-  gap: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.242);
+  background-color: rgba(255, 255, 255, 0.242);
+  border-radius: 5rem;
+  padding: 0.7rem 0.2rem;
+}
+
+header a {
+  color: white;
+  border-radius: 5rem;
+  padding: 0.5rem 2rem;
+}
+
+header li a:hover {
+  color: #b6ae9f;
+  background-color: rgba(255, 255, 255, 0.718);
+  transition: 0.4s;
+}
+
+header button {
+  font-size: 1rem;
+  background-color: rgb(238, 236, 231);
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.619);
+  transition: 0.4s;
 }
 
 /* hero section */
@@ -99,18 +147,30 @@ header ul {
 #hero p {
   font-size: 1.5rem;
   font-weight: 300;
-  z-index: 1;
   color: white;
+  z-index: 1;
+  margin-bottom: 1.5rem;
 }
 
 .hero-btns-wrapper {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   z-index: 1;
 }
 
 .hero-btns-wrapper button {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  background-color: #d9d2c3;
+  padding: 0.9rem 3rem;
+}
+
+.hero-btns-wrapper button a {
+  color: #582a14;
+}
+
+.hero-btns-wrapper button:hover {
+  background-color: white;
+  transition: 0.8s;
 }
 
 /* about section */
@@ -147,7 +207,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 2px solid #f4dacfa8;
+  border: 2px solid #d6c4bc;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
 }
@@ -217,6 +277,7 @@ h3 {
 .view-more-btn-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 /* destinations section */
@@ -258,6 +319,14 @@ h3 {
   left: 20px;
   top: 15px;
   color: white;
+  border: 1px solid white;
+  border-radius: 5rem;
+  padding: 0.5rem 0.7rem;
+  background-color: rgba(0, 0, 0, 0.182);
+}
+
+.fa-star {
+  color: rgb(252, 212, 34);
 }
 
 .rating {
@@ -265,6 +334,14 @@ h3 {
   right: 20px;
   top: 15px;
   color: white;
+  border: 1px solid white;
+  border-radius: 5rem;
+  padding: 0.5rem 0.7rem;
+  background-color: rgba(0, 0, 0, 0.182);
+}
+
+.fa-location-dot {
+  color: #863e1d;
 }
 
 .location {
@@ -272,6 +349,10 @@ h3 {
   left: 15px;
   bottom: 70px;
   color: white;
+  border: 1px solid white;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.293);
   z-index: 1;
 }
 
@@ -297,8 +378,18 @@ h3 {
 }
 
 .price {
-  font-weight: 400;
+  font-weight: 500;
   color: #582a14;
+}
+
+.booking button {
+  background-color: #d9d2c3;
+  color: #4e3326;
+}
+
+.booking button:hover {
+  background-color: #d9d2c396;
+  transition: 0.4s;
 }
 
 /* contact section */
@@ -332,12 +423,24 @@ h3 {
   font-weight: 500;
 }
 
+.contact-btns-wrapper {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.contact-btns-wrapper button {
+  color: #2f2e2b;
+  background-color: rgba(255, 255, 255, 0.453);
+  padding: 0.5rem 1rem;
+}
+
 .contact-wrapper form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
-  background-color: white;
+  padding: 3rem;
+  background-color: rgb(252, 251, 248);
+  z-index: 1;
 }
 
 .contact-wrapper form label {
@@ -348,12 +451,13 @@ h3 {
   margin-bottom: 0.8rem;
   padding: 0.5rem;
   border-radius: 5rem;
-  border: 1px solid black;
+  border: 1px solid #2f2e2b;
 }
 
 .contact-wrapper form textarea {
   margin-bottom: 1.2rem;
   border-radius: 1rem;
+  border: 1px solid #2f2e2b;
 }
 
 .contact-wrapper form textarea::placeholder {
@@ -363,8 +467,6 @@ h3 {
 
 .contact-wrapper form button {
   padding: 0.8rem;
-  border-radius: 5rem;
-  border: none;
 }
 
 /* footer */
@@ -388,13 +490,17 @@ footer h3 {
   margin-bottom: 1rem;
 }
 
+.footer-nav a {
+  color: #b6ae9f;
+}
+
 .newsletter-wrapper p {
   margin-bottom: 1rem;
 }
 
 .newsletter-wrapper form {
   position: relative;
-  border: 1px solid #582a14;
+  border: 2px solid #582a14;
   border-radius: 5rem;
   padding: 0.2rem;
   margin-bottom: 2rem;
@@ -404,12 +510,10 @@ footer h3 {
   padding: 0.5rem;
   border-radius: 5rem;
   border: none;
+  width: 100%;
 }
 
 .newsletter-wrapper button {
-  padding: 0.5rem 1.5rem;
-  border-radius: 5rem;
-  border: 1px solid #582a14;
   position: absolute;
   right: 0.15rem;
   top: 0.15rem;
@@ -430,5 +534,8 @@ footer h3 {
   justify-content: end;
   gap: 1rem;
   font-size: 1.2rem;
+}
+
+.social-media-icons a {
   color: #582a14;
 }
