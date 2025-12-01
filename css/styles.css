@@ -277,6 +277,7 @@ h3 {
   inset: 0;
   background: rgba(0, 0, 0, 0.1);
   z-index: 5;
+  transition: 0.4s;
 }
 
 .category-img-container img {
@@ -425,7 +426,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  background: url(/images/contact_bg.png) no-repeat;
+  background: url(../images/contact_bg.png) no-repeat;
   background-size: cover;
   padding: 3rem;
   height: auto;
