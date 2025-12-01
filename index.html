@@ -19,7 +19,7 @@
     <header>
       <a class="logo" href="#hero">Trailblaze</a>
 
-      <nav>
+      <nav id="menu-desktop">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#destinations">Destinations</a></li>
@@ -27,7 +27,25 @@
         </ul>
       </nav>
 
-      <button>Login</button>
+      <button class="login">Login</button>
+      <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+
+      <div id="menu-tray" class="hidden">
+        <p>Trailblaze</p>
+        <nav>
+          <ul>
+            <hr />
+            <li><a href="#about">About</a></li>
+            <hr />
+            <li><a href="#destinations">Destinations</a></li>
+            <hr />
+            <li><a href="#contact">Contact</a></li>
+            <hr />
+            <button class="login-mobile">Login</button>
+          </ul>
+        </nav>
+        <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
     </header>
 
     <main>
@@ -406,5 +424,7 @@
         </section>
       </div>
     </footer>
+
+    <script src="/Javascript/script.js"></script>
   </body>
 </html>
