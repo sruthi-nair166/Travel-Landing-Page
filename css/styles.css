@@ -467,7 +467,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
+  padding: clamp(1.5rem, 6vw, 3rem);
   background-color: rgb(252, 251, 248);
   z-index: 1;
 }
