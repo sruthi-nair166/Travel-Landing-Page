@@ -29,7 +29,7 @@ h2 {
 
 p,
 span {
-  color: #b6ae9f;
+  color: #847b6c;
   font-weight: 400;
 }
 
@@ -171,17 +171,19 @@ header li a:hover {
   z-index: 1;
 }
 
-.hero-btns-wrapper button {
+.hero-btns-wrapper a {
   font-size: 1.4rem;
+  font-weight: 500;
   background-color: #d9d2c3;
   padding: 0.9rem 3rem;
+  border-radius: 5rem;
 }
 
-.hero-btns-wrapper button a {
+.hero-btns-wrapper a {
   color: #582a14;
 }
 
-.hero-btns-wrapper button:hover {
+.hero-btns-wrapper a:hover {
   background-color: white;
   transition: 0.8s;
 }
@@ -521,7 +523,7 @@ footer h3 {
 }
 
 .footer-nav a {
-  color: #b6ae9f;
+  color: #847b6c;
 }
 
 .newsletter-wrapper p {
@@ -546,7 +548,6 @@ footer h3 {
 .newsletter-wrapper button {
   position: absolute;
   right: 0.15rem;
-  top: 0.15rem;
 }
 
 .copyright-wrapper {
@@ -618,10 +619,10 @@ footer h3 {
     overflow: hidden;
     height: 100vh;
   }
-  #menu-tray span {
+  #menu-tray .menu-logo {
     position: absolute;
     top: 1.5rem;
-    left: 2.2rem;
+    left: 0.3rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: #d9d2c3;
@@ -655,7 +656,7 @@ footer h3 {
     flex-direction: column;
     align-items: center;
   }
-  #menu-tray ul li button {
+  #menu-tray ul li a {
     color: #d9d2c3;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -664,6 +665,7 @@ footer h3 {
     border: none;
     border-radius: 0.3rem;
     width: 100%;
+    font-weight: 500;
   }
   #menu-tray ul li:not(:last-child):hover {
     color: #4e3326;
@@ -704,7 +706,7 @@ footer h3 {
   .hero-btns-wrapper {
     gap: 1rem;
   }
-  .hero-btns-wrapper button {
+  .hero-btns-wrapper a {
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
   }
