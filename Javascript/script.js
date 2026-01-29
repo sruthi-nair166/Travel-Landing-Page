@@ -36,4 +36,4 @@ function showSlides() {
 }
 
 showSlides();
-setInterval(showSlides, 5000);
+setInterval(showSlides, 2500);
