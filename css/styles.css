@@ -771,3 +771,10 @@ footer h3 {
     bottom: 100px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
