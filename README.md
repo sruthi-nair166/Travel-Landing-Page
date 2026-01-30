@@ -22,9 +22,24 @@ Live Site: [https://sruthi-nair166.github.io/Travel-Landing-Page/](https://sruth
 
 ### Overview
 
-This project is a simple, responsive landing page for a travel website. It includes a hero section with a background image and a mobile-friendly navigation menu, followed by an 'About' section with feature cards that highlight the service.
+This project is a simple, responsive landing page for a travel website, designed to showcase destinations, tour packages, and key services in a clean, user-friendly layout.
 
-Users can browse an 'Explore by Category' section with category cards and view a 'Destinations' section showcasing tour packages with location details, ratings, duration, pricing, and booking buttons. The page also includes contact forms intended to let users to get in touch or sign up for updates
+### Features
+
+- Responsive Hero Section
+  Includes a visually engaging hero section with a background image and a mobile-friendly navigation menu.
+
+- About Section with Feature Cards
+  Highlights the service’s core offerings using structured feature cards for easy scanning.
+
+- Explore by Category
+  Allows users to browse travel options through category-based cards.
+
+- Destinations & Tour Packages
+  Displays available tour packages with details such as location, ratings, trip duration, pricing, and booking call-to-action buttons.
+
+- Contact & Signup Forms
+  Includes forms for users to get in touch or sign up for updates.
 
 ### UI/UX Decisions
 
