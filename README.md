@@ -26,19 +26,19 @@ This project is a simple, responsive landing page for a travel website, designed
 
 ### Features
 
-- Responsive Hero Section <br />
+- **Responsive Hero Section** <br />
   Includes a visually engaging hero section with a background image and a mobile-friendly navigation menu.
 
-- About Section with Feature Cards <br />
+- **About Section with Feature Cards** <br />
   Highlights the service’s core offerings using structured feature cards for easy scanning.
 
-- Explore by Category <br />
+- **Explore by Category** <br />
   Allows users to browse travel options through category-based cards.
 
-- Destinations & Tour Packages <br />
+- **Destinations & Tour Packages** <br />
   Displays available tour packages with details such as location, ratings, trip duration, pricing, and booking call-to-action buttons.
 
-- Contact & Signup Forms <br />
+- **Contact & Signup Forms** <br />
   Includes forms for users to get in touch or sign up for updates.
 
 ### UI/UX Decisions
