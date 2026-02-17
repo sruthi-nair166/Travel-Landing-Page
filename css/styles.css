@@ -446,7 +446,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  background: url(../images/contact_bg.png) no-repeat;
+  background: url(../images/contact_bg.jpg) no-repeat;
   background-size: cover;
   padding: 3rem;
   height: auto;
