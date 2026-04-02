@@ -85,8 +85,10 @@ header {
 }
 
 .logo {
-  font-size: 1.1rem;
+  font-family: "Lobster", sans-serif;
+  font-size: 1.2rem;
   font-weight: 500;
+  color: white;
 }
 
 #menu-desktop ul {
@@ -97,7 +99,7 @@ header {
   padding: 0.7rem 0.2rem;
 }
 
-header a {
+.navlinks {
   color: white;
   border-radius: 5rem;
   padding: 0.5rem 2rem;
@@ -650,10 +652,11 @@ footer h3 {
   #menu-tray .menu-logo {
     position: absolute;
     top: 1.5rem;
-    left: 0.3rem;
+    left: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: #d9d2c3;
+    font-family: "Lobster", sans-serif;
   }
   #menu-tray {
     display: block;
