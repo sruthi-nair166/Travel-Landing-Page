@@ -23,13 +23,13 @@ h2 {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
-  color: #ad6a4b;
+  color: #84472a;
   padding-bottom: 0.5rem;
 }
 
 p,
 span {
-  color: #847b6c;
+  color: #605849;
   font-weight: 400;
 }
 
@@ -78,7 +78,7 @@ button {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -104,7 +104,7 @@ header a {
 }
 
 header li a:hover {
-  color: #b6ae9f;
+  color: #5e574a;
   background-color: rgba(255, 255, 255, 0.718);
   transition: 0.4s;
 }
@@ -161,7 +161,7 @@ header li a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
 
@@ -208,15 +208,19 @@ header li a:hover {
 
 /* about section */
 
+.about {
+  margin-bottom: 4rem;
+}
+
 #about {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .subtitle {
   font-size: 2rem;
   font-weight: 500;
   color: #582a14;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -227,13 +231,13 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  margin-bottom: 2rem;
 }
 
 .features-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .features-card {
@@ -243,12 +247,12 @@ h3 {
   text-align: center;
   border: 2px solid #d6c4bc;
   border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 2rem;
 }
 
 .icon {
   padding: 0.5rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   background-color: #ce7e5a;
   border-radius: 0.5rem;
   display: flex;
@@ -267,6 +271,10 @@ h3 {
 
 .explore {
   margin-top: 2.5rem;
+}
+
+.explore-body {
+  margin-bottom: 2rem;
 }
 
 .category-wrapper {
@@ -398,7 +406,8 @@ h3 {
   border: 1px solid white;
   border-radius: 5rem;
   padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.293);
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.347);
   z-index: 1;
 }
 
@@ -416,27 +425,29 @@ h3 {
 .booking {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .package-name {
   margin-top: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .price {
-  font-weight: 500;
+  font-weight: 700;
   color: #582a14;
 }
 
 .booking button {
   background-color: #d9d2c3;
+  border: 2px solid #d9d2c3;
   color: #4e3326;
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .booking button:hover {
-  background-color: #d9d2c396;
+  background-color: #f4f1ec;
+  border: 2px solid #4e3326;
   transition: 0.4s;
 }
 
@@ -446,9 +457,9 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  background: url(../images/contact_bg.jpg) no-repeat;
+  background: url(../images/contact_bg.jpg) bottom no-repeat;
   background-size: cover;
-  padding: 3rem;
+  padding: 5rem 3rem;
   height: auto;
   position: relative;
 }
@@ -465,10 +476,9 @@ h3 {
 }
 
 .contact-wrapper .para {
-  color: #2f2e2b;
+  color: #342d20;
   margin-bottom: 1rem;
   z-index: 1;
-  font-weight: 500;
 }
 
 .contact-btns-wrapper {
@@ -478,7 +488,7 @@ h3 {
 
 .contact-btns-wrapper button {
   color: #2f2e2b;
-  background-color: rgba(255, 255, 255, 0.453);
+  background-color: rgba(255, 255, 255, 0.812);
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
@@ -541,7 +551,7 @@ footer h3 {
 }
 
 .footer-nav a {
-  color: #847b6c;
+  color: #605849;
 }
 
 .newsletter-wrapper p {
